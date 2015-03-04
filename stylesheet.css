@@ -1,0 +1,28 @@
+body{
+  background-color: #006B8F;
+  margin-top: -75px;
+}
+header{ 
+  width: 100%;
+  height: 100px;
+  font-family: Georgia;
+  font-size: 75px;
+  text-align: center;
+ }
+#about_me,#interests,#skills,#achievements {
+  margin-top :100px;
+  font-family: Georgia;
+  font-size: 30px;
+}
+section,div{
+  float: left;
+}
+li{
+  font-size:20px;
+}
+aside{
+  display: inline-block;
+  float: right;
+  width: 40%;
+  margin-right: -80px;
+  }
