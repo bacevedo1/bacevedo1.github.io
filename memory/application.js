@@ -4,8 +4,16 @@ $(document).ready(function(){
   var click_1 = 'nothing'; //if clicked once.. 
   var click_2 = 'nothing';
   for(i in card_array){
-    $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
+    $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>'); //adds the cards to the memory game
   };
+  $('.card').click(function(){
+    if(click_count == 0){ // how the cards will look without being clicked 
+$(this).find('p').css('opacity', 1);
+$(this).find('p').addClass('clicked');  
+      click_count = 1; // when the card is clicked once 
+      click_1 = $(this).find('p').text();
+    }
+    else{	
 $(this).find('p').css('opacity', 1);
       click_count = 0;
       click_2 = $(this).find('p').text();
