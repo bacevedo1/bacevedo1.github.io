@@ -5,7 +5,7 @@ $(document).ready(function(){
   
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-    var play_guess = parseInt($('input'),val());
+    var play_guess = parseInt($('input').val());
     console.log(play_guess);
     //save their guess as a variable
     
