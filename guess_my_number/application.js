@@ -13,7 +13,7 @@ $(document).ready(function(){
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     $("#guess_counter").empty();
-    $("#guess_counter").append("guesses so far: " + guess.toString());// we tried to update it but it didnt work...sorry
+    console.log($("#guess_counter").append("guesses so far: " + guess.toString()));// we tried to update it but it didnt work...sorry
     if(play_guess===comp_integer){
       //what happens if the guess is correct?
       $("#feedback").append("Correct!");
