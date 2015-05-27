@@ -1,2 +1,2 @@
 from gopigo import *
-print us_dist(15)
+if us_dist(15) 
